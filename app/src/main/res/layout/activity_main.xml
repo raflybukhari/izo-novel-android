@@ -29,6 +29,7 @@
                 android:paddingRight="30dp"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/ploy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="25dp"
@@ -211,12 +212,12 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:background="@color/purple_700"/>
+                        android:background="@drawable/novelangkasa"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="7dp"
-                        android:text="Judul novel ini judul"
+                        android:text="Novel Malam"
                         android:textColor="@color/text_sub"/>
                 </LinearLayout>
                 <LinearLayout
@@ -228,12 +229,12 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:background="@color/text_header"/>
+                        android:background="@drawable/novelrantau"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="7dp"
-                        android:text="Judul novel ini judul"
+                        android:text="Novel Rantau"
                         android:textColor="@color/text_sub"/>
                 </LinearLayout>
                 <LinearLayout
@@ -245,12 +246,12 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:background="@color/purple_200"/>
+                        android:background="@drawable/novelsore"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="7dp"
-                        android:text="Judul novel ini judul"
+                        android:text="Novel Senja"
                         android:textColor="@color/text_sub"/>
                 </LinearLayout>
                 <LinearLayout

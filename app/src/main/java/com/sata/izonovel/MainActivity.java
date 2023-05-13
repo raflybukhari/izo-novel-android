@@ -1,4 +1,4 @@
-package com.sata.izonovel;
+package com.lp3i.fizonovel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,24 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.Toast;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    LinearLayout menuInfoPengguna;
+public class activity_main extends AppCompatActivity {
+    TextView morefavorite;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        menuInfoPengguna = findViewById(R.id.informasi_pengguna);
-        menuInfoPengguna.setOnTouchListener(new View.OnTouchListener() {
+        morefavorite = findViewById(R.id.morefavorite);
+        morefavorite.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                Intent intent = new Intent(MainActivity.this, BiodataActivity.class);
+            public boolean onTouch(View v, MotionEvent event) {
+                Intent intent = new Intent(activity_main.this, activity_menu_favorite.class);
                 startActivity(intent);
                 return false;
             }
         });
+
     }
 }

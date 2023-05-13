@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IzoNovel">
         <activity
+            android:name=".detailnovel"
+            android:exported="false" />
+        <activity
+            android:name=".favorit"
+            android:exported="false" />
+        <activity
             android:name=".DaftarNovelActivity"
             android:exported="false" />
         <activity
@@ -24,7 +30,7 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".BiodataActivity"
             android:exported="true" />
